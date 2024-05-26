@@ -63,7 +63,7 @@ const ContactsPage = () => {
       <Box container sx={{ flexGrow: 1, margin: '50px', maxWidth: {sm: '770px', md: '1100px'}}}>
         <Grid container spacing={{ xs: 2, sm: 2, md: 2 }} columns={{ xs: 6, sm: 6, md: 6 }}>
           {filteredContacts.map((_, index) => (
-            <Grid item xs={6} sm={3} md={2} key={index} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Grid item xs={6} sm={3} md={2} key={index} sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}} >
               <ContactCard userData={filteredContacts[index]} setSelectedId={setSelectedId} />
             </Grid>
           ))}

@@ -4,7 +4,7 @@ import { Container } from '@mui/material';
 
 function App() {
   return (
-    <Container sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <Container>
       <ContactsPage />
     </Container>
   );

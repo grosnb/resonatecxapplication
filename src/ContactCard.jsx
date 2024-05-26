@@ -13,6 +13,7 @@ const ContactCard = ({userData, setSelectedId}) => {
       color: 'text.secondary',
       minWidth: '300px',
       width: '300px',
+      boxSizing: 'border-box',
     }}>
       <CardActionArea onClick={() => {setSelectedId(id)}}>
         <CardContent>
